@@ -6,10 +6,11 @@ async function createConnection() {
     return new Promise((resolve, reject) => {
         if (connection == null) {
             connection = mysql.createConnection({
-                host: "localhost",
+                host: "35.245.138.122",
                 port: 3306,
                 user: "root",
-                database: "inventrak_web"
+                database: "inventrak_web",
+                password: "osUoy#nT6JRcL|{r"
             });
 
             connection.connect((oError) => {
