@@ -1,3 +1,4 @@
+const path = require('path');
 const mysql = require('mysql2');
 const cors = require("cors");
 const express = require("express");
@@ -34,8 +35,8 @@ app.use(session({
     resave: true,
     saveUninitialized: true,
     cookie: {
-        sameSite: "none",
-        secure: "auto"
+       // sameSite: "none",
+        //secure: "auto"
         //httpOnly: true,
         //secure: true,
         //maxAge: 24 * 60 * 60 * 1000
@@ -62,6 +63,9 @@ app.use(TiendaServices);
 app.use(UsuarioServices);
 
 app.use(RecordatorioServices);
+
+app.use(express.static(path.join(__dirname, 'public')));
+
 
 async function main() {
     try {
