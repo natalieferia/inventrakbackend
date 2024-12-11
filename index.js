@@ -68,9 +68,9 @@ async function main() {
         conexion = mysql.createConnection({
             host: "35.245.138.122",
             port: 3306,
-            user: "natalieferia",
+            user: "root",
             database: "inventrak_web",
-            password: "oL33J$e\pBDKoz2z"
+            password: "osUoy#nT6JRcL|{r"
         })
 
         console.log("se ha creado la conexion con exito");
@@ -79,7 +79,7 @@ async function main() {
     }
 
     if (conexion != null) {
-        app.listen(4000);
+        app.listen(8080);
     }
 }
 
