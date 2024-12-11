@@ -33,11 +33,11 @@ app.use(session({
     secret: 'd_ZHMa7;N;Vri9i8NY"PzOCzf:g"£oh>2azk30e[b~8faQzYnU',
     resave: true,
     saveUninitialized: true,
-    cookie: {
+    /*cookie: {
         httpOnly: true,
         secure: true,
         maxAge: 24 * 60 * 60 * 1000
-    }
+    }*/
 }));
 
 
