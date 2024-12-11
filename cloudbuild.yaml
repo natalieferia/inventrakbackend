@@ -44,7 +44,7 @@ substitutions:
   _AR_HOSTNAME: us-east4-docker.pkg.dev
   _TRIGGER_ID: 41386984-63df-4a11-b8c7-690df2b0bfb8
   _PLATFORM: managed
-  _SERVICE_NAME: inventrack-backend
+  _SERVICE_NAME: inventrackbackend
   _DEPLOY_REGION: us-east4
 tags:
   - gcp-cloud-build-deploy-cloud-run
