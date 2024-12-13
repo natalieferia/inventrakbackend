@@ -371,6 +371,7 @@ async function importarExcel(req, res) {
             const oNewValues = oRow.values.slice(1, oRow.values.length -1);
 
             const oInventario = oInventarios.result.find((oItem) => {
+                console.log(oNewValues)
                 return oItem.nombre.toUpperCase() === oNewValues[10].toUpperCase()
             })
 
