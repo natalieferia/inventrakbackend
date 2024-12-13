@@ -368,7 +368,7 @@ async function importarExcel(req, res) {
         ]);
 
         const oValuesInsert = oRows.map((oRow) => {
-            const oNewValues = oRow.values.slice(1, oRow.values.length -1);
+            const oNewValues = oRow.values.slice(1, oRow.values.length);
 
             const oInventario = oInventarios.result.find((oItem) => {
                 console.log(oNewValues)
